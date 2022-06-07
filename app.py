@@ -1,5 +1,5 @@
 # Importing Necessary modules
-import uvicorn
+#import uvicorn
 from fastapi import FastAPI
 from typing import Optional
 from pydantic import BaseModel
@@ -39,4 +39,4 @@ def predict(data: request_body):
     return {'user_id': data.user_id, 'prediction': class_idx}    
 
 
-uvicorn.run(app_model_01)
+#uvicorn.run(app_model_01)
